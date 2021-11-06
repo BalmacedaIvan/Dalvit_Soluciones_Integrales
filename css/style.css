@@ -7,7 +7,7 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
+    
 }
 
 html{
@@ -177,7 +177,7 @@ header label{
     width: 800px;
     text-align: center;
     opacity: 0.9;
-    
+        
 }
 
 .links{
@@ -243,7 +243,6 @@ header label{
     position: relative;   
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 50px;
-    
 }
 
 .container h1::after{
@@ -272,7 +271,8 @@ header label{
     font-size: 15px;
     cursor: pointer;
     background: transparent;
-    transition: transform 0.2s, background 0.5s;
+    transition: transform 0.2s; 
+
 }
 
 
@@ -299,7 +299,17 @@ header label{
     font-size: 20px;
 }
 
+
+@media screen and (max-width:1260px) {
+    .container{
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
 /*service section styles ends*/
+
+
 
 
 /*proyects section styles starts*/
@@ -334,7 +344,6 @@ header label{
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    
 }
 
 .contenedor-imagenes{
@@ -389,6 +398,34 @@ header label{
     height: 100%;
 }
 
+
+
+
+@media screen and (max-width:700px){
+    .proyects_container{
+        height: 120%;
+    }
+
+    .contenedor-imagenes{
+        width: 90%;
+    }
+
+    .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    .contenedor-imagenes{
+        width: 98%;
+    }
+
+    .imagen{
+        width: 80%;
+    }
+}
+
+
 /*proyects section styles ends*/
 
 
@@ -410,7 +447,7 @@ header label{
 
 .lightbox img{
    width: 75%;
-   height: 70%;
+   height: auto;
    max-width: 100%;
 }
 
@@ -453,6 +490,185 @@ header label{
 
 
 
+/*style nosotros starts*/
+.seccion_nosotros{
+    width: 100%;
+    min-height: 80vh;
+    background-color: #ddd;
+}
+
+.container_nosotros{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content_nosotros{
+    float: left;
+    width: 55%;
+}
+
+.image_nosotros{
+    float: right;
+    width: 40%;
+}
+
+.image_nosotros img{
+    width: 100%;
+    height: auto;
+}
+
+.titulo_nosotros{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #212121;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.sub{
+    content: '';
+    border-radius: 5px;
+    background: #fca311;
+    width: 200px;
+    height: 5px;
+    position: absolute;
+    margin-top: 5px;
+    
+}
+
+
+.content h4{
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 21px;
+}
+
+.content p{
+    /* margin-top: 10px; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+.button_nosotros{
+    margin-top: 30px;
+}
+
+
+.button_nosotros a{
+    background-color: #fca311;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: ease-in-out .3s;
+}
+
+
+.button_nosotros a:hover{
+    background-color: #023047;
+}
+
+.social{
+    margin: 40px 10px;
+}
+
+.social i{
+    color: #fca311;
+    font-size: 40px;
+    padding: 0px 10px;
+    transition: .2s ease-in-out;
+}
+
+.social i:hover{
+    color: #023047;
+    transform: scale(1.5);
+}
+
+
+@media screen and (max-width:768px){
+    .seccion_nosotros{
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    
+    .container_nosotros{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+        
+    }
+
+    .content_nosotros{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+           
+    }
+
+    .image_nosotros{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .titulo_nosotros{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .sub{
+        content: '';
+        border-radius: 5px;
+        background: #fca311;
+        width: 80%;
+        height: 5px;
+        position: absolute;
+        margin-top: 5px;
+    }
+
+    .titulo_nosotros h3{
+        font-weight: 900;
+    }
+    
+
+    .button_nosotros{
+        text-align: center;
+
+    }
+
+    .button_nosotros a{
+        padding: 9px 30px ;
+    }
+
+    .social{
+        text-align: center;
+        
+    }
+}
+
+/*style nosotros ends*/
+
+
+
+
+/*style cards contact starts*/
+
+
+/*style cards contact ends*/
+
 
 
 
@@ -483,13 +699,12 @@ header label{
 
 /*media queries*/
 
-@media (max-width:1280px){
-    /*service*/
+/* @media (max-width:1280px){
     .container{
         width: 100%;
         height: 100vh;
     }
-}
+} */
 
 @media (max-width:1200px){
     html{
@@ -497,22 +712,14 @@ header label{
     }
 }
 
-@media (max-width:1150px){
-    /*service*/
+/* @media (max-width:1150px){
     .container{
         width: 100%;
         height: 135vh;
     }
-}
+} */
 
-@media (max-width:940px){
-    /*service*/
-    .container{
-        width: 100%;
-        height: 170vh;
-        
-    }
-}
+
 
 
 @media (max-width:768px){
@@ -567,11 +774,12 @@ header label{
         width: 100vw;
         text-align: center;
         opacity: 0.95;
+        padding: 15px;
     }
 }
 
-@media (max-width:660px){
-    /*service*/
+/* @media (max-width:660px){
+    
     .container{
         width: 100%;
         height: 190vh;
@@ -580,14 +788,14 @@ header label{
 }
 
 @media (max-width:620px){
-    /*service*/
+    
     .container{
         width: 100%;
         height: 320vh;
        
     }
 
-}
+} */
 
 
 @media (max-width:450px){
@@ -598,48 +806,23 @@ header label{
 
 
 /*media query de proyectos*/
-@media screen and (max-width:1000px){
+/* @media screen and (max-width:1000px){
     .contenedor-imagenes{
         width: 95%;
     }
-}
+} */
 
-@media screen and (max-width:700px){
-    .proyects_container{
-        height: 120%;
-    }
-
-    .contenedor-imagenes{
-        width: 90%;
-    }
-
-    .imagen{
-        width: 48%;
-    }
-}
-
-@media screen and (max-width:450px){
-    .contenedor-imagenes{
-        width: 98%;
-    }
-
-    .imagen{
-        width: 80%;
-    }
-
-    
-}
 
 
 /*media query height*/
-@media screen and (max-height:1024px) {
+/* @media screen and (max-height:1024px) {
     .container{
         height: 125vh;
         
     }
     
     
-}
+} */
 
 
 
