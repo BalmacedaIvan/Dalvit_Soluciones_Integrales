@@ -867,8 +867,8 @@ header label{
 
 
 /*JS style*/
-.scrolling-active{
-    background-color: red;
+.bgColor{
+    background-color: rgba(0, 0, 0, 0.651);
 }
 
 
@@ -926,7 +926,8 @@ header label{
         transform-origin: top;
         transform: scaleY(0);
         opacity: 1;
-        background-color: rgba(0, 0, 0, .9);
+        background-color: rgba(0, 0, 0, 0.651);
+        
     }
 
     header .navbar a{
