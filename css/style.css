@@ -667,7 +667,7 @@ header label{
 /*style cards contact starts*/
 .contact_container{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-color: #f5f6fa;
 }
 
@@ -675,7 +675,9 @@ header label{
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
+    padding-top: 50px;
 }
 
 
@@ -766,6 +768,10 @@ header label{
 
 
 @media screen and (max-width:768px) {
+    .contact_container{
+        height: auto;
+    }
+    
     .card_container{
         display: flex;
         flex-wrap: wrap;
@@ -773,6 +779,94 @@ header label{
 }
 
 /*style cards contact ends*/
+
+
+/*style footer starts*/
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #343436; 
+    padding-top: 20px;
+}
+
+.social-links{
+    text-align: center;
+    margin: 5px;
+    color: #fca311;
+
+}
+
+.social-links a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.social-links a:hover{
+    opacity: 1;
+}
+
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+.footer ul li a{
+    color: #ccc;
+    text-decoration: none;
+    opacity: 0.3;
+    transition: 0.3s ease;
+    
+}
+
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+
+.footer ul li a:hover{
+    opacity: 1;
+}
+
+
+.copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.endpage{
+    background-color: #030303e3;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+/*style footer ends*/
+
 
 
 
