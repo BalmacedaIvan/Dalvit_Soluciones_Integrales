@@ -44,24 +44,25 @@ header .navbar a{
     margin-left: 2rem;
     color: #fff;
     font-weight: 500;
-    padding-left: 10px;
-    padding-right: 10px;
-    opacity: 0.7;
+    opacity: 1;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .navbar a:hover{
     background-color: #fca211d5;
     padding: 5px;
     border-radius: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    transition: .1s ease-in-out;
+    padding-left: 4px;
+    padding-right: 4px;
+    transition: .2s ease-in-out;
     opacity: 1;
 }
 
+
 .logo img{
     width: 110px;
-    height: 40px;
+    height: 60px;
 }
 
 header input{
@@ -74,6 +75,52 @@ header label{
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
+}
+
+/*@media querys*/
+@media (max-width:768px){
+    header{
+        height: 60px;
+    }
+
+
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 2rem;
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.651);
+        
+    }
+
+    header .navbar a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+        color: white;
+        opacity: 1;
+    }
+
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+        transition: ease-in-out 0.2s;
+    }
+
+    header input:checked ~ label::before{
+        content: '\f00d';
+        
+    }
+
 }
 /*navbar styles ends*/
 
@@ -174,13 +221,21 @@ header label{
     
 }
 
+.banner-content h3{
+    position: relative;
+    color: #dee2e6;
+    font-size: 5vw;
+    display: block;
+    
+}
+
 
 .banner-content h2{
     color: whitesmoke;
     font-size: 2vw;
     width: 800px;
     text-align: center;
-    opacity: 0.9;
+    opacity: 0.8;
         
 }
 
@@ -205,6 +260,12 @@ header label{
     justify-content: center;
     margin: 5px;
     letter-spacing: 2px;
+    transition: 0.3s ease;
+
+}
+
+.btn1:hover{
+    transform: scale(1.2);
 }
 
 .btn2{
@@ -221,6 +282,44 @@ header label{
     justify-content: center;
     margin: 5px;
     letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+
+.btn2:hover:hover{
+    transform: scale(1.2);
+}
+
+
+/*media querys*/
+
+@media (max-width:768px){
+    .banner{
+        height: 94vh;
+    }
+
+    .banner-content h1{
+        font-size: 6.5vw;
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: -10px;
+    }
+
+    .banner-content h3{
+        font-size: 16vw;
+        text-align: center;
+        font-weight: 900;
+        color: white;
+        margin-top: -10px;
+    }
+
+    .banner-content h2{
+        color: whitesmoke;
+        font-size: 3vw;
+        width: 100vw;
+        text-align: center;
+        opacity: 0.95;
+        padding: 15px;
+    }
 }
 
 /*banner slide styles ends*/
@@ -730,6 +829,7 @@ header label{
     background-color: #343436;
     cursor: pointer;
     border-radius: 2px;
+
 }
 
 .card h4{
@@ -873,7 +973,7 @@ header label{
 /*JS style*/
 .bgColor{
     background-color: rgba(0, 0, 0, 0.651);
-    transition: .9s ease;
+    transition: .7s ease;
 }
 
 
@@ -913,80 +1013,20 @@ header label{
 }
 
 
-
-
-
-@media (max-width:768px){
-    header{
-        height: 60px;
-    }
-
-
-    header label{
-        visibility: visible;
-        opacity: 1;
-    }
-
-    header .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 2rem;
-        transform-origin: top;
-        transform: scaleY(0);
-        opacity: 1;
-        background-color: rgba(0, 0, 0, 0.651);
-        
-    }
-
-    header .navbar a{
-        display: block;
-        margin: 2rem 0;
-        font-size: 2rem;
-        color: white;
-        opacity: 1;
-    }
-
-    header input:checked ~ .navbar{
-        transform: scaleY(1);
-        opacity: 1;
-        transition: ease-in-out 0.2s;
-    }
-
-    header input:checked ~ label::before{
-        content: '\f00d';
-        
-    }
-
-    .banner{
-        height: 94vh;
-    }
-    
-
-    .banner-content h1{
-        font-size: 9vw;
-        text-align: center;
-        font-weight: 900;
-    }
-
-    .banner-content h2{
-        color: whitesmoke;
-        font-size: 3vw;
-        width: 100vw;
-        text-align: center;
-        opacity: 0.95;
-        padding: 15px;
-    }
-}
-
-
-
 @media (max-width:450px){
     html{
         font-size: 50%;
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 
