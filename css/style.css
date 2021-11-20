@@ -301,7 +301,7 @@ header label{
         font-size: 6.5vw;
         text-align: center;
         font-weight: 900;
-        margin-bottom: -10px;
+        margin-bottom: -35px;
     }
 
     .banner-content h3{
@@ -309,17 +309,48 @@ header label{
         text-align: center;
         font-weight: 900;
         color: white;
-        margin-top: -10px;
+        margin-top: -11px;
+        
     }
 
     .banner-content h2{
         color: whitesmoke;
-        font-size: 3vw;
+        font-size: 4vw;
         width: 100vw;
         text-align: center;
-        opacity: 0.95;
+        opacity: 1;
         padding: 15px;
     }
+}
+
+@media (max-width:650px){
+    .banner-content h1{
+        font-size: 6.5vw;
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: -25px;
+    }
+
+}
+
+@media (max-width:490px){
+    .banner-content h1{
+        font-size: 6.5vw;
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: -10px;
+    }
+
+}
+
+@media (max-width:390px){
+    .banner-content h1{
+        font-size: 6.5vw;
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: -15px;
+    }
+
 }
 
 /*banner slide styles ends*/
