@@ -353,6 +353,29 @@ header label{
 
 }
 
+@media (max-width:350px){
+    .banner-content h1{
+        font-size: 6.5vw;
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: -10px;
+    
+    }
+
+}
+
+@media (max-width:300px){
+    .banner-content h1{
+        font-size: 6.5vw;
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: -7px;
+    
+    }
+
+}
+
+
 /*banner slide styles ends*/
 
 
@@ -634,10 +657,12 @@ header label{
     width: 100%;
     min-height: 80vh;
     background-color: #ddd;
+
 }
 
 .container_nosotros{
     width: 80%;
+    height: auto;
     display: block;
     margin: auto;
     padding-top: 100px;
@@ -646,6 +671,7 @@ header label{
 .content_nosotros{
     float: left;
     width: 55%;
+    height: auto;
 }
 
 .image_nosotros{
@@ -732,6 +758,19 @@ header label{
 }
 
 
+@media screen and (max-width:1160px) {
+    .seccion_nosotros{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .seccion_nosotros{
+        height: 110vh;
+        
+    }
+}
+
 @media screen and (max-width:768px){
     .seccion_nosotros{
         width: 100%;
@@ -806,7 +845,7 @@ header label{
 /*style cards contact starts*/
 .contact_container{
     width: 100%;
-    height: 80vh;
+    height: auto;
     background-color: #f5f6fa;
 }
 
@@ -906,6 +945,18 @@ header label{
     transform: scale(1.6);
 }
 
+.clipboard{
+    color: transparent;
+    background-color: transparent;
+}
+
+.clipboard::-moz-selection{
+    background-color: transparent;
+}
+
+.clipboard::selection{
+    background-color: transparent;
+}
 
 @media screen and (max-width:768px) {
     .contact_container{
