@@ -14,3 +14,26 @@ function changeBg(){
 window.addEventListener('scroll', changeBg);
 
 
+
+/*copiar numero de telefono al portapapeles*/
+const button = document.querySelector('i.hola')
+const input = document.querySelector('.clipboard')
+const copy = document.querySelector('.message')
+
+button.addEventListener('click', function(){
+
+    input.focus();
+
+    document.execCommand('selectAll');
+
+    document.execCommand('copy');
+
+    /*sweetAlert telefono copiado*/
+    Swal.fire(
+        '¡Telefono Copiado!',
+        'Numero copiado al portapapeles',
+        'success'
+      )
+
+})
+
