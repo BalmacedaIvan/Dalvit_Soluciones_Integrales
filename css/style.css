@@ -343,11 +343,11 @@ header label{
         text-align: center;
         font-weight: 900;
         color: red;
-        margin-bottom: -10px;
+        
     }
 
     .banner-content h3{
-        margin-top: 35px;
+        margin-top: 15px;
         color: #dee2e6;
     }
 }
