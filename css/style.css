@@ -329,28 +329,23 @@ header label{
         font-size: 6.5vw;
         text-align: center;
         font-weight: 900;
-        /* margin-bottom: -25px; */
+        
     }
 
 }
 
-@media (max-width:490px){
+@media (max-width:460px){
     .banner-content h1{
         font-size: 6.5vw;
         text-align: center;
         font-weight: 900;
-        margin-bottom: -28px;
     }
 
-}
-
-@media (max-width:390px){
-    .banner-content h1{
-        font-size: 6.5vw;
-        text-align: center;
-        font-weight: 900;
-        margin-bottom: -15px;
+    .banner-content h3{
+        margin-top: 15px;
+        color: #dee2e6;
     }
+
 
 }
 
@@ -359,12 +354,15 @@ header label{
         font-size: 6.5vw;
         text-align: center;
         font-weight: 900;
-        /* margin-bottom: -10px; */
-    
+    }
+
+    .banner-content h3{
+        position: relative;
+        color: #dee2e6;
+        margin-top:25px;
     }
 
 }
-
 
 
 /*banner slide styles ends*/
