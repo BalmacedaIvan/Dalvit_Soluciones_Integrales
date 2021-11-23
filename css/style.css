@@ -334,6 +334,20 @@ header label{
 
 }
 
+@media (max-width:500px){
+    .banner-content h1{
+        font-size: 6.5vw;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .banner-content h3{
+        margin-top: 20px;
+        color: #dee2e6;
+    }
+
+}
+
 @media (max-width:460px){
     .banner-content h1{
         font-size: 6.5vw;
