@@ -329,30 +329,19 @@ header label{
         font-size: 6.5vw;
         text-align: center;
         font-weight: 900;
+        color: pink;
         
     }
 
 }
 
-@media (max-width:500px){
-    .banner-content h1{
-        font-size: 6.5vw;
-        text-align: center;
-        font-weight: 900;
-    }
-
-    .banner-content h3{
-        margin-top: 20px;
-        color: #dee2e6;
-    }
-
-}
 
 @media (max-width:460px){
     .banner-content h1{
         font-size: 6.5vw;
         text-align: center;
         font-weight: 900;
+        color: red;
     }
 
     .banner-content h3{
@@ -368,6 +357,7 @@ header label{
         font-size: 6.5vw;
         text-align: center;
         font-weight: 900;
+        color: green;
     }
 
     .banner-content h3{
