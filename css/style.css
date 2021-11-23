@@ -343,7 +343,7 @@ header label{
         text-align: center;
         font-weight: 900;
         color: red;
-        
+        margin-bottom: -10px;
     }
 
     .banner-content h3{
