@@ -302,7 +302,7 @@ header label{
         text-align: center;
         font-weight: 900;
         margin-bottom: -35px;
-        color: purple;
+    
         
     }
 
@@ -311,7 +311,7 @@ header label{
         text-align: center;
         font-weight: 900;
         color: white;
-        /* margin-top: -11px; */
+        
         
     }
 
@@ -330,7 +330,7 @@ header label{
         font-size: 6.5vw;
         text-align: center;
         font-weight: 900;
-        color: pink;
+        
         
     }
 
@@ -342,7 +342,6 @@ header label{
         font-size: 6.5vw;
         text-align: center;
         font-weight: 900;
-        color: red;
         margin-bottom: -25px;
     }
 
@@ -357,7 +356,7 @@ header label{
         font-size: 6.5vw;
         text-align: center;
         font-weight: 900;
-        color: green;
+        
     }
 
     .banner-content h3{
